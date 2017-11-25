@@ -1,0 +1,204 @@
+body {
+	background-color: #fff;
+  margin: 0px;
+	font-family: "meta_book";
+	font-size: 20px;
+	text-align: center;
+	font-family: "Sans_Serif";
+	src: url("../fonts/OpenSans-CondLight.eot#?iefix") format("embedded-opentype"),
+		   url("../fonts/OpenSans-CondLight.ttf") format("truetype"),
+		   url("../fonts/OpenSans-CondLight.svg#Pecita") format("svg"),
+  		 url("../fonts/OpenSans-CondLight.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Sans_Serif";
+	src: url("../fonts/OpenSans-CondLight.eot#?iefix") format("embedded-opentype"),
+		   url("../fonts/OpenSans-CondLight.ttf") format("truetype"),
+		   url("../fonts/OpenSans-CondLight.svg#Pecita") format("svg"),
+  		 url("../fonts/OpenSans-CondLight.woff") format("woff");
+}
+/*HEADER*/
+header {
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 80px;
+	position: fixed;
+	display: block;
+	width: 100%;
+	z-index: 1000;
+}
+nav {
+	margin: 0 auto;
+	width: 100%;
+}
+#mainMenu, #redes {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	margin: 0 auto;
+}
+#redes ul {
+	margin-left: 0.75em;
+}
+#mainMenu ul li, #redes ul li {
+	cursor: pointer;
+	display: inline-block;
+	list-style: none;
+	position: relative;
+}
+#MainMenu ul li a:hover {
+	color: #009392;
+}
+#MainMenu ul li.active a {
+	color: #009392;
+}
+#MainMenu ul li a {
+	color: #575756;
+	line-height: 50px;
+	position: relative;
+	text-decoration: none;
+	box-sizing:border-box;
+	padding: 0.75em;
+}
+#redes	ul li a {
+	color: #575756;
+	line-height: 50px;
+	position: relative;
+	text-decoration: none;
+	box-sizing:border-box;
+	padding: 0.25em;
+}
+#facebook, #twitter, #instagram, #youtube {
+	height: 20px;
+	margin: 0px;
+	padding:0px;
+}
+
+.menu_bar{
+	display: none;
+}
+
+@media (max-width: 850px){
+  header {
+  	height: 40px;
+  }
+  header nav{
+  	display: block;
+  	position: fixed;
+  	width: 100%;
+  	height: 100%;
+  	top: -100%;
+  	z-index: 999;
+  	background-color: rgba(255, 255, 255, 0.9);
+  }
+  #redes {
+  	display: block;
+  }
+  #redes ul{
+  	display: inline-block;
+  }
+  #mainMenu{
+  	width: 75%;
+  }
+  #mainMenu ul li {
+  	display: block;
+  	float: none;
+  	border-bottom:  1px solid rgba(0, 147, 146, 0.25);
+  }
+   #redes ul li {
+  	float: none;
+  }
+  #mainMenu ul li a{
+  	line-height: 40px;
+  	padding: 0.20em;
+  }
+  #redes	ul li a{
+  	line-height: 40px;
+  	padding: 0.20em 0.50em;
+  }
+  .menu_bar{
+  	display: inline-block;
+  	width: 100%;
+  	line-height: 40px;
+  }
+  .menu_bar .boton_menu {
+  	display: inline-block;
+  	font-family: "meta_book";
+  	color: #009392;
+  	text-decoration: none;
+  }
+
+  .section{
+      clear: none;
+      display: block;
+      /*float: left;*/
+      overflow-x: visible;
+      overflow-y: visible;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+  }
+}
+@media (max-width: 640px){
+
+  header {
+  	height: 40px;
+  }
+
+  header nav{
+  	display: block;
+  	position: fixed;
+  	width: 100%;
+  	height: 100%;
+  	top: -100%;
+  	z-index: 999;
+  	background-color: rgba(255, 255, 255, 0.9);
+  }
+  #redes {
+  	display: block;
+  }
+  #redes ul{
+  	display: inline-block;
+  }
+  #mainMenu{
+  	width: 95%;
+  }
+  #mainMenu ul li {
+  	display: block;
+  	float: none;
+  	border-bottom:  1px solid rgba(0, 147, 146, 0.25);
+  }
+   #redes ul li {
+  	float: none;
+  }
+  #mainMenu ul li a{
+  	line-height: 25px;
+  	padding: 0.20em;
+  	font-size: 14px;
+  }
+  #redes	ul li a{
+  	line-height: 25px;
+  	padding: 0.20em 0.50em;
+  	font-size: 14px;
+
+  }
+  .menu_bar{
+  	display: inline-block;
+  	width: 100%;
+  	line-height: 40px;
+  }
+  .menu_bar .boton_menu {
+  	display: inline-block;
+  	font-family: "meta_book";
+  	color: #009392;
+  	text-decoration: none;
+  }
+}
+
+.logo {
+  width: 90%;
+  position: absolute;
+  top: 0px;
+  left: 5%;
+  z-index: 0
+}
