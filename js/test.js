@@ -6,7 +6,7 @@ var leafRotation = 0;
 
 function preload() {
   logo = loadImage("img/Chamalú/LogoChamalú.png");
-  hoja = loadImage("img/Hojas/Hoja1.png");
+  hoja = loadImage("img/Hojas/hoja1.png");
   // for (var i = 0; i < 11; i++) {
   //   hojas[i] = loadImage("img/Hojas/"+ i +".png")
   // }
