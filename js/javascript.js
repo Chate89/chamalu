@@ -3,6 +3,6 @@ $(document).ready(function() {
     	css3: true,
     	navigation:true,
     	anchors: ['inicio', 'grupo', 'temas', 'imagenes', 'videos', 'partituras', 'discos', 'contacto'],
-   		menu: '#myMenu'
+   		menu: '#Menu'
 	    });
 });
