@@ -1,6 +1,11 @@
 var contador = 1;
 var button;
 var x = 50;
+var abg;
+
+function preload(){
+  abg = loadSound('audio/abg.ogg');
+}
 
 
 function setup() {
@@ -8,6 +13,10 @@ function setup() {
   canvas.position(0, 0);
   canvas.style('z-index', 999);
   pixelDensity(1);
+
+  // abg.loop();
+  abg.loop();
+
   button = select('.boton_menu');
   button.mousePressed(menu);
 }
