@@ -8,8 +8,15 @@ function setup() {
   canvas.position(0, 0);
   canvas.style('z-index', -1);
   pixelDensity(1);
+
+  // menu_bar
   button = select('.boton_menu');
   button.mousePressed(menu);
+
+  //audiobg
+  audiobg = select('#audiobackground');
+  audiobg.volume(0);
+  playabg();
 }
 
 function draw() {

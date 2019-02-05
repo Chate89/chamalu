@@ -3,12 +3,6 @@ var vol = 0;
 var maxVol = 0.3;
 var needToFadeIn;
 
-function setup(){
-  audiobg = select('#audiobackground');
-  audiobg.volume(0);
-  playabg();
-}
-
 function playabg() {
   // start playing
   if (audiobg.time() == 0){
@@ -18,6 +12,4 @@ function playabg() {
   } else {
     // audiobg.pause();
   }
-
-
 }
