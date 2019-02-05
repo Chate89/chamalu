@@ -1,7 +1,7 @@
 var contador = 1;
 var button;
 var x = 50;
-var audiobg;
+
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
@@ -10,24 +10,28 @@ function setup() {
   pixelDensity(1);
   button = select('.boton_menu');
   button.mousePressed(menu);
-  audiobg = select('#audiobackground');
-  if (!audiobg.isPlaying){
-    audiobg.play();
-  }
 }
 
 function draw() {
+  if (needToFadeIn) {
+    if (vol < maxVol){
+      vol = vol+0.001;
+      audiobg.volume(vol);
+    } else {
+      vol = maxVol;
+      audiobg.volume(vol);
+      // needToFadeIn = false;
+    }
+  }
 }
 
 
 function mousePressed(){
-  audiobg = select('#audiobackground');
-  if (!audiobg.isPlaying){
-    audiobg.play();
-  }
-
+  playabg();
   console.log(mouseX + ", " + mouseY)
 }
+
+
 
 function menu(){
 		if(contador == 1){
