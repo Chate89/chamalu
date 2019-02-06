@@ -147,7 +147,7 @@ nav {
 /* imagenes */
 #bg_foto1{
 	background: url("../img/Chamalú/fedev.png") no-repeat center;
-	background-size: contain;
+	background-size: cover;
 }
 /* Videos */
 #yt_list{
