@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
 
-  <script lenguage="javascript" type="text/javascript" src="js/libraries/p5.js"></script>
-  <script lenguage="javascript" type="text/javascript" src="js/libraries/p5.dom.js"></script>
-
   <script src="js/jquery.min.js"></script>
 	<script src="js/jquery.easings.min.js"></script>
 	<script src="js/javascript.js"></script>
@@ -57,18 +54,65 @@
 
   <div id="fullpage">
 
+    <!-- Inicio -->
     <div class="section" id="bg_inicio">
       <p id="texto_inicio">Chamalú trio</p>
     </div>
 
+    <!-- Grupo -->
     <div class="section">
       <div class="slide" id="bg_grupo1"></div>
+      <div class="slide" id="bg_grupo2"></div>
+      <div class="slide" id="bg_grupo3"></div>
+      <div class="slide" id="bg_grupo4"></div>
     </div>
 
+    <!-- Temas -->
+    <div class="section" id="bg_temas">
+        <iframe width="80%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/176901139&color=%23272727&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        <!-- <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="40%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+    </div>
 
+     <!-- Imagenes -->
+    <div class="section">
+	    	<div class="slide" id="bg_foto1"></div>
+				<div class="slide" id="bg_foto2"></div>
+    </div>
+
+    <!-- Videos -->
+    <div class="section">
+      <div id="yt_list">
+      <iframe width="100%" height="100%"
+        src="https://www.youtube.com/embed/videoseries?list=PLlaRFm4MhRU58-7rGCKG4o5TOOEDvkTcy"
+        frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Partituras -->
+    <div class="section" id="bg_partituras">
+    </div>
+
+    <!-- Discos -->
+    <div class="section" id="bg_discos">
+    </div>
+
+    <!-- Contacto -->
+    <div class="section" id="bg_contacto">
+  					<form id="contact">
+    						<label for="nombre"></label><br>
+    						<input id="nombre" type="text" name="nombre" placeholder="nombre y apellido" required="" /><br>
+
+    						<label for="email"></label><br>
+    						<input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" /><br>
+
+    						<label for="mensaje"></label><br>
+    						<textarea id="mensaje" name="mensaje" placeholder="mensaje" required="" /></textarea><br>
+
+    						<button class="submit" type="submit">enviar</button>
+  					</form>
+    </div>
   </div>
 
-  <!-- <script lenguage="javascript" type="text/javascript" src="js/test.js"></script> -->
   <script lenguage="javascript" type="text/javascript" src="js/audiobackground.js"></script>
   <script lenguage="javascript" type="text/javascript" src="js/menu.js"></script>
 </body>
