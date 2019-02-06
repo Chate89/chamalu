@@ -4,17 +4,25 @@
     padding: 0;
 }
 @font-face {
-	font-family: "Sans_Serif";
+	font-family: "DK-Lemon";
 	src: url("../fonts/DK-Lemon-Yellow-Sun.eot#?iefix") format("embedded-opentype"),
 		   url("../fonts/DK-Lemon-Yellow-Sun.otf") format("truetype"),
 		   url("../fonts/DK-Lemon-Yellow-Sun.svg#Pecita") format("svg"),
   		 url("../fonts/DK-Lemon-Yellow-Sun.woff") format("woff");
 }
+@font-face {
+	font-family: "meta_book";
+	src: url("../fonts/MetaSerifBook.eot");
+	src: url("../fonts/MetaSerifBook.eot#?iefix") format("embedded-opentype"),
+		 url("../fonts/MetaSerifBook.ttf") format("truetype"),
+		 url("../fonts/MetaSerifBook.svg#Pecita") format("svg"),
+		 url("../fonts/MetaSerifBook.woff") format("woff");
+}
 
 body {
 	background-color: #fff;
   margin: 0px;
-	font-family: "Sans_Serif";
+	font-family: "DK-Lemon";
 	font-size: 20px;
 	text-align: center;
   background: url("../img/Chamalú/fondo.png") center no-repeat;
@@ -108,16 +116,104 @@ nav {
 	display: none;
 }
 
+/* inicio */
 #bg_inicio{
 	background: url("../img/Chamalú/logo1.png") center no-repeat;
 	background-size: cover;
 	display: inline-block;
 }
+
+/* grupo */
 #bg_grupo1{
 	background: url("../img/Chamalú/chatepng.png") no-repeat center;
 	background-size: cover;
 }
+#bg_grupo2{
+	background: url("../img/Chamalú/fondo.png") no-repeat center;
+	background-size: cover;
+}
+#bg_grupo3{
+	background: url("../img/Chamalú/fondo.png") no-repeat center;
+	background-size: cover;
+}
+#bg_grupo4{
+	background: url("../img/Chamalú/fondo.png") no-repeat center;
+	background-size: cover;
+}
+/* temas */
+#bg_temas{
+	/* background: url("../img/temas.jpg") no-repeat bottom center; */
+}
+/* imagenes */
+#bg_foto1{
+	background: url("../img/Chamalú/fedev.png") no-repeat center;
+	background-size: contain;
+}
+/* Videos */
+#yt_list{
+	position: absolute;
+	right: 0;
+	bottom: auto;
+	top:0;
+	right:0;
+	height: 100%;
+	width: 100%;
+	background-size: 100% 100%;
+	padding-top: 35px;
+	background-size: contain;
+}
+/* Partituras */
+#bg_partituras{
+	background: url("../img/Chamalú/fondo.png") no-repeat center;
+  background-size: cover;
+  background-position: 100%;
+}
+/* Discos */
+#bg_discos{
+	background: url("../img/Chamalú/fondo.png") no-repeat center;
+  background-size: cover;
+  background-position: 100%;
+}
+/* Form */
+form {
+	margin-bottom: 100px;
+}
+#bg_contacto{
+  background: url("../img/Chamalú/lostres.png") no-repeat center;
+  background-size: cover;
+}
 
+
+input[type="text"], input[type="email"], textarea {
+	width: 350px;
+	height: 35px;
+	background: rgba(255, 255, 255, 0.5 );
+	color: rgb(87, 87, 86);
+	font-family: sans-serif;
+	padding-left: 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	outline: none;
+	border: 0px;
+}
+textarea {
+	max-width: 350px;
+	min-width: 350px;
+	min-height: 200px;
+	padding-top: 10px;
+}
+button[type="submit"]{
+	width: 360px;
+	height: 40px;
+	outline: none;
+	border-radius: 5px;
+	border: 0px;
+	cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #cccccc;
+	font-family: sans-serif;
+	font-size: 16px;
+}
 
 
 
@@ -172,7 +268,7 @@ nav {
   .menu_bar .boton_menu {
   	display: inline-block;
 		/* margin-top: 10px; */
-  	font-family: "Sans_Serif";
+  	font-family: "DK-Lemon";
   	color: #575756;
   	text-decoration: none;
   }
@@ -236,7 +332,7 @@ nav {
   }
   .menu_bar .boton_menu {
 		display: inline-block;
-  	font-family: "Sans_Serif";
+  	font-family: "DK-Lemon";
   	color: #575756;
   	text-decoration: none;
   }
